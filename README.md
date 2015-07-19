@@ -15,7 +15,7 @@ uncss:
   ignore  : "#added_at_runtime"
   media   : (min-width: 700px) handheld and (orientation: landscape)
   timeout : 1000
-  uncssrc : '.uncssrc'
+  uncssrc : .uncssrc
 ```
 
 - **enable** - Enable the plugin. Defaults to `true`.
