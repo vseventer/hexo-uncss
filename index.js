@@ -32,7 +32,7 @@ var assign = require('object-assign');
 var filter = require('./lib/filter.js');
 
 // Configure.
-hexo.config.ucss = assign({
+hexo.config.uncss = assign({
   enable  : true,
   ignore  : [ ],
   media   : null,

@@ -25,14 +25,79 @@
 // Strict mode.
 'use strict';
 
+// Standard lib.
+var fs   = require('fs'),
+    path = require('path');
+
 // Local modules.
 var subject = require('../lib/filter.js');
 
+// Configure.
+var fixture = path.join(__dirname, 'fixture.html');
+
+// Stub hexo.route.
+var hexoRoute = {
+  get: function(name) {
+    return fs.createReadStream(name, { encoding: 'utf8' });
+  },
+  list: function() {
+    return [ fixture ];
+  }
+};
+
 // Test suite.
 describe('hexo-uncss', function() {
-
   // Tests.
-  it('should remove unused styles from CSS.');
-  it('should support uncss options.');
-  it('should do nothing if disabled.');
+  it('should remove unused styles from CSS.', function() {
+    // Configure.
+    var data = 'div { color: black; } span { color: white; }';
+    var hexo = {
+      config: {
+        uncss: { }
+      },
+      route: hexoRoute
+    };
+
+    // Filter and test.
+    var promise = subject.call(hexo, data);
+    return promise.then(function(result) {
+      result = result.replace(/\s/g, ''); // Perform a whitespace  ..
+      var expected = 'div{color:black;}'; // insensitive comparison.
+      console.assert(result === expected);
+    });
+  });
+
+  it('should support uncss options.', function() {
+    // Configure.
+    var data = 'div { color: black; } span { color: white; }';
+    var hexo = {
+      config: {
+        uncss: { ignore: [ 'span' ] }
+      },
+      route: hexoRoute
+    };
+
+    // Filter and test.
+    var promise = subject.call(hexo, data);
+    return promise.then(function(result) {
+      result = result.replace(/\s/g, ''); // Perform a whitespace  ..
+      var expected = data.replace(/\s/g, ''); // insensitive comparison.
+      console.assert(result === expected);
+    });
+  });
+
+  it('should do nothing if disabled.', function() {
+    // Configure.
+    var data = 'div { color: black }; span { color: white }';
+    var hexo = {
+      config: {
+        uncss: { enable: false }
+      },
+      route: hexoRoute
+    };
+
+    // Filter and test.
+    var result = subject.call(hexo, data);
+    console.assert(result === data);
+  });
 });
