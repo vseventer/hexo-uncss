@@ -11,14 +11,16 @@ You can configure this plugin in `_config.yml`.
 
 ```yaml
 uncss:
-  enable  : true
-  ignore  : "#added_at_runtime"
-  media   : (min-width: 700px) handheld and (orientation: landscape)
-  timeout : 1000
-  uncssrc : .uncssrc
+  enable   : true
+  ignore   : "#added_at_runtime"
+  media    : (min-width: 700px) handheld and (orientation: landscape)
+  priority : 10
+  timeout  : 1000
+  uncssrc  : .uncssrc
 ```
 
 - **enable** - Enable the plugin. Defaults to `true`.
+- **priority** - Set the filter priority. Lower priorities execute first. Defaults to `10`.
 - All other options correspond to their [uncss](https://github.com/giakki/uncss#usage) equivalent.
 
 ## Changelog

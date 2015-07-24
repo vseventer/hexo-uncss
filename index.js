@@ -33,12 +33,13 @@ var filter = require('./lib/filter.js');
 
 // Configure.
 hexo.config.uncss = assign({
-  enable  : true,
-  ignore  : [ ],
-  media   : null,
-  timeout : 1000,
-  uncssrc : null
+  enable   : true,
+  ignore   : [ ],
+  media    : null,
+  priority : 10,
+  timeout  : 1000,
+  uncssrc  : null
 }, hexo.config.uncss);
 
-// Register the filter.
-hexo.extend.filter.register('after_render:css', filter);
+// Register the filter with low priority.
+hexo.extend.filter.register('after_render:css', filter, hexo.config.uncss.priority);
