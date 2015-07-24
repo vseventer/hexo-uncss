@@ -41,5 +41,5 @@ hexo.config.uncss = assign({
   uncssrc  : null
 }, hexo.config.uncss);
 
-// Register the filter with low priority.
+// Register the filter.
 hexo.extend.filter.register('after_render:css', filter, hexo.config.uncss.priority);
