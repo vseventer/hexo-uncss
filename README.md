@@ -1,5 +1,5 @@
 # uncss plugin for [Hexo](https://hexo.io)
-> Remove unused styles from CSS with [uncss](https://www.npmjs.com/package/uncss).
+> Remove unused styles from CSS with [uncss](https://github.com/giakki/uncss).
 
 ## Install
 ```bash

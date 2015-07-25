@@ -2,7 +2,7 @@
 
 ## 0.1.2-dev
 * Added debug statements using [`debug`](https://github.com/visionmedia/debug).
-* Bugfix: Handle scenario where there are no generated HTML files.
+* Fixes [#1](https://github.com/vseventer/hexo-uncss/issues/1): Handle scenario where there are no generated HTML files.
 
 ## 0.1.1 (July 24, 2015)
 * Added `priority` option.
