@@ -59,7 +59,7 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var promise = subject.call(hexo, data);
+    var promise = subject.call(hexo, data, { path: 'test.css' });
     return promise.then(function(result) {
       result = result.replace(/\s/g, ''); // Perform a whitespace  ..
       var expected = 'div{color:black;}'; // insensitive comparison.
@@ -78,7 +78,7 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var promise = subject.call(hexo, data);
+    var promise = subject.call(hexo, data, { path: 'test.css' });
     return promise.then(function(result) {
       result = result.replace(/\s/g, ''); // Perform a whitespace  ..
       var expected = data.replace(/\s/g, ''); // insensitive comparison.
@@ -101,7 +101,7 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var result = subject.call(hexo, data);
+    var result = subject.call(hexo, data, { path: 'test.css' });
     console.assert(result === data);
   });
 
@@ -116,7 +116,7 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var result = subject.call(hexo, data);
+    var result = subject.call(hexo, data, { path: 'test.css' });
     console.assert(result === data);
   });
 });

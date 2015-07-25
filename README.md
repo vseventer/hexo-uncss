@@ -23,6 +23,9 @@ uncss:
 - **priority** - Set the filter priority. Lower priorities execute first. Defaults to `10`.
 - All other options correspond to their [uncss](https://github.com/giakki/uncss#usage) equivalent.
 
+## Debugging
+Launch the node process like `DEBUG=hexo:uncss hexo ...` to inspect debug messages.
+
 ## Changelog
 See the [Changelog](./CHANGELOG.md) for a list of changes.
 
