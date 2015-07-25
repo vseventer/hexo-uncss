@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2-dev
+* Bugfix: Handle scenario where there are no generated HTML files.
+
 ## 0.1.1 (July 24, 2015)
 * Added `priority` option.
 * Replaced dependency `stream-to-buffer` with `stream-to-array`.

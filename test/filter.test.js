@@ -86,6 +86,25 @@ describe('hexo-uncss', function() {
     });
   });
 
+  it('should do nothing if there are no HTML files.', function() {
+    // Configure.
+    var data = 'div { color: black }; span { color: white }';
+    var hexo = {
+      config: {
+        uncss: { }
+      },
+      route: {
+        list: function() {
+          return [ ];
+        }
+      }
+    };
+
+    // Filter and test.
+    var result = subject.call(hexo, data);
+    console.assert(result === data);
+  });
+
   it('should do nothing if disabled.', function() {
     // Configure.
     var data = 'div { color: black }; span { color: white }';
