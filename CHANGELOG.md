@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.2-dev
+## 0.1.2
 * Added debug statements using [`debug`](https://github.com/visionmedia/debug).
 * Fixes [#1](https://github.com/vseventer/hexo-uncss/issues/1): Handle scenario where there are no generated HTML files.
 
