@@ -1,6 +1,9 @@
 # Changelog
 
-## 0.1.2
+## 0.1.3 (July 31, 2015)
+* Bugfix: uncss now ignores external stylesheets.
+
+## 0.1.2 (July 26, 2015)
 * Added debug statements using [`debug`](https://github.com/visionmedia/debug).
 * Fixes [#1](https://github.com/vseventer/hexo-uncss/issues/1): Handle scenario where there are no generated HTML files.
 

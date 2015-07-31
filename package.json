@@ -1,6 +1,6 @@
 {
   "name"        : "hexo-uncss",
-  "version"     : "0.1.2",
+  "version"     : "0.1.3",
   "description" : "uncss plugin for Hexo.",
   "keywords"    : [ "hexo", "hexo-plugin", "hexo-filter", "uncss", "css", "html" ],
   "homepage"    : "https://github.com/vseventer/hexo-uncss",
