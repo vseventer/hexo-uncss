@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4 (January 18, 2016)
+* Bugfix: add support for Node.js 4.x.
+* Updated copyright to `2016`.
+* Updated dependencies.
+
 ## 0.1.3 (July 31, 2015)
 * Bugfix: uncss now ignores external stylesheets.
 
