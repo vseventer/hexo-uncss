@@ -14,17 +14,17 @@
     "test"    : "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
-    "bluebird"        : "2.9.x",
-    "debug"           : "2.2.x",
-    "minimatch"       : "2.0.x",
-    "object-assign"   : "3.0.x",
-    "stream-to-array" : "2.0.x",
-    "uncss"           : "0.12.x"
+    "bluebird"        : "^3.1.1",
+    "debug"           : "^2.2.0",
+    "minimatch"       : "^3.0.0",
+    "object-assign"   : "^4.0.1",
+    "stream-to-array" : "^2.2.1",
+    "uncss"           : "^0.12.1"
   },
   "devDependencies": {
-    "jshint"         : "2.8.x",
-    "jshint-stylish" : "2.0.x",
-    "mocha"          : "2.2.x"
+    "jshint"         : "^2.9.1",
+    "jshint-stylish" : "^2.1.0",
+    "mocha"          : "^2.3.4"
   },
-  "engines": { "node" : ">=0.10.x" }
+  "engines": { "node" : ">=4.0.0" }
 }
