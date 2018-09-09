@@ -24,12 +24,11 @@
     "test": "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
-    "bluebird": "3.5.1",
-    "debug": "3.1.0",
-    "minimatch": "3.0.4",
-    "object-assign": "4.1.1",
-    "stream-to-array": "2.3.0",
-    "uncss": "0.16.2"
+    "bluebird": "^3.5.2",
+    "debug": "^3.1.0",
+    "minimatch": "^3.0.4",
+    "stream-to-array": "^2.3.0",
+    "uncss": "^0.16.2"
   },
   "devDependencies": {
     "jshint": "2.9.x",

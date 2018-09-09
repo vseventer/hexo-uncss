@@ -25,14 +25,11 @@
 // Strict mode.
 'use strict';
 
-// Package modules.
-var assign = require('object-assign');
-
 // Local modules.
 var filter = require('./lib/filter.js');
 
 // Configure.
-hexo.config.uncss = assign({
+hexo.config.uncss = Object.assign({
   enable   : true,
   ignore   : [ ],
   media    : null,
