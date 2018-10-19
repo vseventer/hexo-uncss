@@ -20,7 +20,7 @@
   },
   "main": "./index.js",
   "scripts": {
-    "pretest": "./node_modules/.bin/jshint --reporter=./node_modules/jshint-stylish lib/ test/ *.js",
+    "pretest": "./node_modules/.bin/jshint --reporter=./node_modules/jshint-stylish lib/ test/ index.js",
     "test": "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
@@ -33,9 +33,9 @@
   "devDependencies": {
     "jshint": "2.9.x",
     "jshint-stylish": "2.2.1",
-    "mocha": "4.x"
+    "mocha": "5.x"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   }
 }
