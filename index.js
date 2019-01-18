@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
 **/
+/* global hexo */
 
 // Strict mode.
 'use strict';
@@ -30,12 +31,12 @@ var filter = require('./lib/filter.js');
 
 // Configure.
 hexo.config.uncss = Object.assign({
-  enable   : true,
-  ignore   : [ ],
-  media    : null,
-  priority : 10,
-  timeout  : 1000,
-  uncssrc  : null
+  enable: true,
+  ignore: [],
+  media: null,
+  priority: 10,
+  timeout: 1000,
+  uncssrc: null
 }, hexo.config.uncss);
 
 // Register the filter.

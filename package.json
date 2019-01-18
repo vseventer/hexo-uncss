@@ -20,20 +20,20 @@
   },
   "main": "./index.js",
   "scripts": {
-    "pretest": "./node_modules/.bin/jshint --reporter=./node_modules/jshint-stylish lib/ test/ index.js",
+    "pretest": "eslint .",
     "test": "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
-    "bluebird": "^3.5.2",
-    "debug": "^4.0.1",
+    "bluebird": "^3.5.3",
+    "debug": "^4.1.1",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0",
     "uncss": "^0.16.2"
   },
   "devDependencies": {
-    "jshint": "2.9.x",
-    "jshint-stylish": "2.2.1",
-    "mocha": "5.x"
+    "eslint": "5.12.0",
+    "eslint-config-hexo": "3.0.0",
+    "mocha": "^5.2.0"
   },
   "engines": {
     "node": ">=8"

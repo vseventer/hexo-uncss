@@ -21,13 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
 **/
-
+/* global it describe */
 // Strict mode.
 'use strict';
 
 // Standard lib.
-var fs   = require('fs'),
-    path = require('path');
+var fs = require('fs');
+
+
+var path = require('path');
 
 // Local modules.
 var subject = require('../lib/filter.js');
@@ -41,7 +43,7 @@ var hexoRoute = {
     return fs.createReadStream(name, { encoding: 'utf8' });
   },
   list: function() {
-    return [ fixture ];
+    return [fixture];
   }
 };
 
@@ -72,7 +74,7 @@ describe('hexo-uncss', function() {
     var data = 'div { color: black; } span { color: white; }';
     var hexo = {
       config: {
-        uncss: { ignore: [ 'span' ] }
+        uncss: { ignore: ['span'] }
       },
       route: hexoRoute
     };
@@ -95,7 +97,7 @@ describe('hexo-uncss', function() {
       },
       route: {
         list: function() {
-          return [ ];
+          return [];
         }
       }
     };
