@@ -24,14 +24,14 @@
     "test": "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
-    "bluebird": "^3.5.3",
+    "bluebird": "^3.5.5",
     "debug": "^4.1.1",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0",
     "uncss": "^0.16.2"
   },
   "devDependencies": {
-    "eslint": "5.12.0",
+    "eslint": "5.16.0",
     "eslint-config-hexo": "3.0.0",
     "mocha": "^5.2.0"
   },
