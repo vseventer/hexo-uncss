@@ -1,3 +1,4 @@
+"use strict";
 /**
  * The MIT License (MIT)
  *
@@ -21,10 +22,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
 **/
-/* global hexo */
-
-// Strict mode.
-'use strict';
 
 // Local modules.
 var filter = require('./lib/filter.js');

@@ -28,7 +28,7 @@
     "debug": "^4.1.1",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0",
-    "uncss": "^0.16.2"
+    "uncss": "^0.17.0"
   },
   "devDependencies": {
     "eslint": "5.16.0",
