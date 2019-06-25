@@ -31,9 +31,9 @@
     "uncss": "^0.17.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
+    "eslint": "6.0.1",
     "eslint-config-hexo": "3.0.0",
-    "mocha": "^5.2.0"
+    "mocha": "^6.1.4"
   },
   "engines": {
     "node": ">=8"

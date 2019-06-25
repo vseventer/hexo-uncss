@@ -1,4 +1,6 @@
-"use strict";
+/* global hexo */
+'use strict';
+
 /**
  * The MIT License (MIT)
  *
