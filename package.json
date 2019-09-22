@@ -28,12 +28,12 @@
     "debug": "^4.1.1",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0",
-    "uncss": "^0.17.0"
+    "uncss": "^0.17.2"
   },
   "devDependencies": {
-    "eslint": "6.0.1",
+    "eslint": "^6.4.0",
     "eslint-config-hexo": "3.0.0",
-    "mocha": "^6.1.4"
+    "mocha": "^6.2.0"
   },
   "engines": {
     "node": ">=8"
