@@ -24,18 +24,18 @@
     "test": "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
-    "bluebird": "^3.5.5",
+    "bluebird": "^3.7.0",
     "debug": "^4.1.1",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0",
     "uncss": "^0.17.2"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
-    "eslint-config-hexo": "3.0.0",
-    "mocha": "^6.2.0"
+    "eslint": "^6.5.1",
+    "eslint-config-hexo": "^3.0.0",
+    "mocha": "^6.2.1"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=8.6.0"
   }
 }
