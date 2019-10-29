@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "bluebird"        : "3.1.x",
-    "debug"           : "2.2.x",
+    "debug"           : "4.1.x",
     "minimatch"       : "3.0.x",
     "object-assign"   : "4.0.x",
     "stream-to-array" : "2.2.x",
