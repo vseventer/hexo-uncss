@@ -26,7 +26,7 @@
 **/
 
 // Local modules.
-var filter = require('./lib/filter.js');
+const filter = require('./lib/filter.js');
 
 // Configure.
 hexo.config.uncss = Object.assign({

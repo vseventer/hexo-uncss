@@ -26,18 +26,18 @@
 'use strict';
 
 // Standard lib.
-var fs = require('fs');
+const fs = require('fs');
 
-var path = require('path');
+const path = require('path');
 
 // Local modules.
-var subject = require('../lib/filter.js');
+const subject = require('../lib/filter.js');
 
 // Configure.
-var fixture = path.join(__dirname, 'fixture.html');
+const fixture = path.join(__dirname, 'fixture.html');
 
 // Stub hexo.route.
-var hexoRoute = {
+const hexoRoute = {
   get: function(name) {
     return fs.createReadStream(name, { encoding: 'utf8' });
   },
@@ -47,12 +47,12 @@ var hexoRoute = {
 };
 
 // Test suite.
-describe('hexo-uncss', function() {
+describe('hexo-uncss', () => {
   // Tests.
-  it('should remove unused styles from CSS.', function() {
+  it('should remove unused styles from CSS.', () => {
     // Configure.
-    var data = 'div { color: black; } span { color: white; }';
-    var hexo = {
+    const data = 'div { color: black; } span { color: white; }';
+    const hexo = {
       config: {
         uncss: { }
       },
@@ -60,18 +60,18 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var promise = subject.call(hexo, data, { path: 'test.css' });
-    return promise.then(function(result) {
+    const promise = subject.call(hexo, data, { path: 'test.css' });
+    return promise.then(result => {
       result = result.replace(/\s/g, ''); // Perform a whitespace  ..
-      var expected = 'div{color:black;}'; // insensitive comparison.
+      const expected = 'div{color:black;}'; // insensitive comparison.
       console.assert(result === expected);
     });
   });
 
-  it('should support uncss options.', function() {
+  it('should support uncss options.', () => {
     // Configure.
-    var data = 'div { color: black; } span { color: white; }';
-    var hexo = {
+    const data = 'div { color: black; } span { color: white; }';
+    const hexo = {
       config: {
         uncss: { ignore: ['span'] }
       },
@@ -79,18 +79,18 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var promise = subject.call(hexo, data, { path: 'test.css' });
-    return promise.then(function(result) {
+    const promise = subject.call(hexo, data, { path: 'test.css' });
+    return promise.then(result => {
       result = result.replace(/\s/g, ''); // Perform a whitespace  ..
-      var expected = data.replace(/\s/g, ''); // insensitive comparison.
+      const expected = data.replace(/\s/g, ''); // insensitive comparison.
       console.assert(result === expected);
     });
   });
 
-  it('should do nothing if there are no HTML files.', function() {
+  it('should do nothing if there are no HTML files.', () => {
     // Configure.
-    var data = 'div { color: black }; span { color: white }';
-    var hexo = {
+    const data = 'div { color: black }; span { color: white }';
+    const hexo = {
       config: {
         uncss: { }
       },
@@ -102,14 +102,14 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var result = subject.call(hexo, data, { path: 'test.css' });
+    const result = subject.call(hexo, data, { path: 'test.css' });
     console.assert(result === data);
   });
 
-  it('should do nothing if disabled.', function() {
+  it('should do nothing if disabled.', () => {
     // Configure.
-    var data = 'div { color: black }; span { color: white }';
-    var hexo = {
+    const data = 'div { color: black }; span { color: white }';
+    const hexo = {
       config: {
         uncss: { enable: false }
       },
@@ -117,7 +117,7 @@ describe('hexo-uncss', function() {
     };
 
     // Filter and test.
-    var result = subject.call(hexo, data, { path: 'test.css' });
+    const result = subject.call(hexo, data, { path: 'test.css' });
     console.assert(result === data);
   });
 });
