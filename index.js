@@ -33,7 +33,7 @@ hexo.config.uncss = Object.assign({
   enable: true,
   ignore: [],
   media: null,
-  priority: 10,
+  priority: 12,
   timeout: 1000,
   uncssrc: null
 }, hexo.config.uncss);

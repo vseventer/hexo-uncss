@@ -1,22 +1,23 @@
 {
-  "name": "hexo-uncss",
-  "version": "0.1.4",
-  "description": "uncss plugin for Hexo.",
+  "name": "hexo-uncss2",
+  "version": "1.0.0",
+  "description": "uncss2 plugin for Hexo.",
   "keywords": [
     "hexo",
     "hexo-plugin",
     "hexo-filter",
     "uncss",
+    "uncss2",
     "css",
     "html"
   ],
-  "homepage": "https://github.com/vseventer/hexo-uncss",
-  "bugs": "https://github.com/vseventer/hexo-uncss/issues",
+  "homepage": "https://github.com/tomap/hexo-uncss",
+  "bugs": "https://github.com/tomap/hexo-uncss/issues",
   "license": "MIT",
   "author": "Mark van Seventer <mark@vseventer.com>",
   "repository": {
     "type": "git",
-    "url": "vseventer/hexo-uncss"
+    "url": "tomap/hexo-uncss"
   },
   "main": "./index.js",
   "scripts": {
@@ -31,7 +32,7 @@
     "uncss": "^0.17.3"
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "eslint-config-hexo": "^4.1.0",
     "mocha": "^8.0.1"
   },
