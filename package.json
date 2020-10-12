@@ -11,13 +11,13 @@
     "css",
     "html"
   ],
-  "homepage": "https://github.com/tomap/hexo-uncss",
-  "bugs": "https://github.com/tomap/hexo-uncss/issues",
+  "homepage": "https://github.com/tomap/hexo-uncss2",
+  "bugs": "https://github.com/tomap/hexo-uncss2/issues",
   "license": "MIT",
   "author": "Mark van Seventer <mark@vseventer.com>",
   "repository": {
     "type": "git",
-    "url": "tomap/hexo-uncss"
+    "url": "tomap/hexo-uncss2"
   },
   "main": "./index.js",
   "scripts": {
