@@ -26,15 +26,15 @@
   },
   "dependencies": {
     "bluebird": "^3.7.2",
-    "debug": "^4.2.0",
+    "debug": "^4.3.1",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0",
     "uncss": "^0.17.3"
   },
   "devDependencies": {
-    "eslint": "^7.11.0",
+    "eslint": "^7.14.0",
     "eslint-config-hexo": "^4.1.0",
-    "mocha": "^8.2.0"
+    "mocha": "^8.2.1"
   },
   "engines": {
     "node": ">=10.18.0"
