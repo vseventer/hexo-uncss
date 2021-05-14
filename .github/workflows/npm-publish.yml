@@ -15,6 +15,6 @@ jobs:
         node-version: '14.x'
     - run: npm i
     - run: npm test
-    - run: npm publish
+    - run: npm publish -v
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
