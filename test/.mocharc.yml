@@ -1,0 +1,5 @@
+check-leaks: true
+exit: false
+reporter: 'spec'
+timeout: 3000
+ui: 'bdd'

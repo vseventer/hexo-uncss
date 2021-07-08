@@ -1,4 +1,8 @@
 # Changelog
+## 1.0.0 (July 2020)
+* Forked hexo-uncss2
+* Increase Priority to run before hexo-clean-css plugin
+* Update dependencies
 
 ## 0.1.4 (January 18, 2016)
 * Bugfix: add support for Node.js 4.x.

@@ -1,3 +1,6 @@
+/* global hexo */
+'use strict';
+
 /**
  * The MIT License (MIT)
  *
@@ -22,23 +25,17 @@
  * THE SOFTWARE.
 **/
 
-// Strict mode.
-'use strict';
-
-// Package modules.
-var assign = require('object-assign');
-
 // Local modules.
-var filter = require('./lib/filter.js');
+const filter = require('./lib/filter.js');
 
 // Configure.
-hexo.config.uncss = assign({
-  enable   : true,
-  ignore   : [ ],
-  media    : null,
-  priority : 10,
-  timeout  : 1000,
-  uncssrc  : null
+hexo.config.uncss = Object.assign({
+  enable: true,
+  ignore: [],
+  media: null,
+  priority: 12,
+  timeout: 1000,
+  uncssrc: null
 }, hexo.config.uncss);
 
 // Register the filter.
