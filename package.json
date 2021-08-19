@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^7.26.0",
-    "eslint-config-hexo": "^4.1.0",
+    "eslint-config-hexo": "^4.2.0",
     "mocha": "^8.4.0"
   },
   "engines": {
