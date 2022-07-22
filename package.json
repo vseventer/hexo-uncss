@@ -29,15 +29,14 @@
     "debug": "^4.3.4",
     "minimatch": "^5.1.0",
     "stream-to-array": "^2.3.0",
-    "@novaatwarren/uncss": "^0.17.5"
+    "uncss": "^0.17.3"
   },
   "devDependencies": {
     "eslint": "^8.20.0",
     "eslint-config-hexo": "^5.0.0",
-    "mocha": "^10.0.0"
+    "mocha": "^9.2.2"
   },
   "engines": {
     "node": ">=12"
-  },
-  "type": "module"
+  }
 }
