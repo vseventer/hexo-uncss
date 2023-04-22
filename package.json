@@ -27,7 +27,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "debug": "^4.3.4",
-    "minimatch": "^7.1.1",
+    "minimatch": "^9.0.0",
     "stream-to-array": "^2.3.0",
     "uncss": "^0.17.3"
   },
