@@ -1,6 +1,6 @@
 {
   "name": "hexo-uncss2",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "uncss2 plugin for Hexo.",
   "keywords": [
     "hexo",
@@ -27,16 +27,16 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "debug": "^4.3.4",
-    "minimatch": "^9.0.0",
+    "minimatch": "^9.0.3",
     "stream-to-array": "^2.3.0",
     "uncss": "^0.17.3"
   },
   "devDependencies": {
-    "eslint": "^8.20.0",
+    "eslint": "^8.48.0",
     "eslint-config-hexo": "^5.0.0",
     "mocha": "^10.2.0"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   }
 }
