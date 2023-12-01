@@ -1,30 +1,42 @@
 {
-  "name"        : "hexo-uncss",
-  "version"     : "0.1.4",
-  "description" : "uncss plugin for Hexo.",
-  "keywords"    : [ "hexo", "hexo-plugin", "hexo-filter", "uncss", "css", "html" ],
-  "homepage"    : "https://github.com/vseventer/hexo-uncss",
-  "bugs"        : "https://github.com/vseventer/hexo-uncss/issues",
-  "license"     : "MIT",
-  "author"      : "Mark van Seventer <mark@vseventer.com>",
-  "repository"  : { "type": "git", "url": "vseventer/hexo-uncss" },
-  "main"        : "./index.js",
-  "scripts"     : {
-    "pretest" : "./node_modules/.bin/jshint --reporter=./node_modules/jshint-stylish lib/ test/ *.js",
-    "test"    : "./node_modules/.bin/mocha test/"
+  "name": "hexo-uncss2",
+  "version": "2.3.3",
+  "description": "uncss2 plugin for Hexo.",
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "hexo-filter",
+    "uncss",
+    "uncss2",
+    "css",
+    "html"
+  ],
+  "homepage": "https://github.com/tomap/hexo-uncss2",
+  "bugs": "https://github.com/tomap/hexo-uncss2/issues",
+  "license": "MIT",
+  "author": "Mark van Seventer <mark@vseventer.com>",
+  "repository": {
+    "type": "git",
+    "url": "tomap/hexo-uncss2"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "./node_modules/.bin/mocha test/"
   },
   "dependencies": {
-    "bluebird"        : "3.1.x",
-    "debug"           : "2.2.x",
-    "minimatch"       : "3.0.x",
-    "object-assign"   : "4.0.x",
-    "stream-to-array" : "2.2.x",
-    "uncss"           : "0.12.x"
+    "bluebird": "^3.7.2",
+    "debug": "^4.3.4",
+    "minimatch": "^9.0.3",
+    "stream-to-array": "^2.3.0",
+    "uncss": "^0.17.3"
   },
   "devDependencies": {
-    "jshint"         : "2.9.x",
-    "jshint-stylish" : "2.1.x",
-    "mocha"          : "2.3.x"
+    "eslint": "^8.54.0",
+    "eslint-config-hexo": "^5.0.0",
+    "mocha": "^10.2.0"
   },
-  "engines": { "node" : ">=0.10.x" }
+  "engines": {
+    "node": ">=18"
+  }
 }

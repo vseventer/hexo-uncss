@@ -1,2 +1,4 @@
 test/
-.jshintrc
+.eslint*
+.gitattributes
+.github
